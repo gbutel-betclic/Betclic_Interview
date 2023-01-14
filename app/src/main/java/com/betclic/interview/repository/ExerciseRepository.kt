@@ -17,4 +17,7 @@ class ExerciseRepository @Inject constructor(
 
     fun getCharacter(id: String): Single<CharacterDetails> =
         exerciseApiClient.getCharacter(id)
+
+    suspend fun getSuspendCharacter(id: String): CharacterDetails =
+        exerciseApiClient.getSuspendCharacter(id)
 }

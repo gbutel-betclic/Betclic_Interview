@@ -17,4 +17,7 @@ class ExerciseApiClient @Inject constructor(
 
     fun getCharacter(id: String): Single<CharacterDetails> =
         exerciseService.getCharacter(id)
+
+    suspend fun getSuspendCharacter(id: String) =
+        exerciseService.getSuspendCharacter(id)
 }

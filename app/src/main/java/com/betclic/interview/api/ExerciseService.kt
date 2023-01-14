@@ -13,4 +13,7 @@ interface ExerciseService {
 
     @GET("characters/bySlug/{id}")
     fun getCharacter(@Path("id") id: String): Single<CharacterDetails>
+
+    @GET("characters/bySlug/{id}")
+    suspend fun getSuspendCharacter(@Path("id") id: String): CharacterDetails
 }

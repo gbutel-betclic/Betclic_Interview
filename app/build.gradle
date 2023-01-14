@@ -16,7 +16,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField "String", "baseUrl", "\"https://www.breakingbadapi.com/api/\""
+        buildConfigField "String", "baseUrl", "\"https://api.got.show/api/show/\""
     }
 
     buildTypes {

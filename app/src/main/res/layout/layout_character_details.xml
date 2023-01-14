@@ -38,7 +38,7 @@
         tools:text="Character name" />
 
     <TextView
-        android:id="@+id/details_character_description"
+        android:id="@+id/details_character_house"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_high"
@@ -53,7 +53,7 @@
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/details_character_avatar"
-        tools:text="Character description" />
+        tools:text="Character house" />
 
     <TextView
         android:id="@+id/details_character_portrayed"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/details_character_description"
+        app:layout_constraintTop_toBottomOf="@+id/details_character_house"
         tools:text="Portrayed by" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

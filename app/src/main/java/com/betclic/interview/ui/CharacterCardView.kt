@@ -24,15 +24,14 @@ class CharacterCardView @JvmOverloads constructor(
             .transition(DrawableTransitionOptions.withCrossFade())
             .into(binding.characterAvatar)
         binding.characterName.text = state.name
-        binding.characterDescription.text = "\"${state.description}\""
+        binding.characterHouse.text = state.house
         binding.characterPortrayed.text = state.portrayed
     }
-
 }
 
 data class CharacterCardState(
-    val iconUrl: String,
+    val iconUrl: String?,
     val name: String,
-    val description: String,
-    val portrayed: String
+    val house: String?,
+    val portrayed: String?,
 )

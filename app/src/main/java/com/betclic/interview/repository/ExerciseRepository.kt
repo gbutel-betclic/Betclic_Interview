@@ -15,6 +15,6 @@ class ExerciseRepository @Inject constructor(
     fun getCharacters(): Single<List<Character>> =
         exerciseApiClient.getCharacters()
 
-    fun getCharacter(id: Int): Single<CharacterDetails> =
+    fun getCharacter(id: String): Single<CharacterDetails> =
         exerciseApiClient.getCharacter(id)
 }

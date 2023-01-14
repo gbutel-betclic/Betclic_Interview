@@ -25,10 +25,10 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.CharacterViewHolder>() {
         val character = characters[position]
         holder.item.set(
             CharacterCardState(
-                character.img,
-                character.name,
-                character.nickname,
-                character.portrayed
+                iconUrl = character.img,
+                name = character.name,
+                house = character.house,
+                portrayed = character.portrayed,
             )
         )
     }

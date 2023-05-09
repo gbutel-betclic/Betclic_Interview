@@ -1,7 +1,7 @@
 package com.betclic.interview.ui
 
 import androidx.lifecycle.ViewModel
-import com.betclic.interview.api.dto.Character
+import com.betclic.interview.api.dto.Player
 import com.betclic.interview.repository.ExerciseRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.Single
@@ -12,6 +12,6 @@ class MainViewModel @Inject constructor(
     private val exerciseRepository: ExerciseRepository
 ) : ViewModel() {
 
-    fun getCharacters() : Single<List<Character>> =
-        exerciseRepository.getCharacters()
+    fun getPlayers() : Single<List<Player>> =
+        exerciseRepository.getPlayers()
 }

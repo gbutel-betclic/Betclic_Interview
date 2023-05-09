@@ -1,8 +1,8 @@
 package com.betclic.interview.repository
 
 import com.betclic.interview.api.ExerciseApiClient
-import com.betclic.interview.api.dto.CharacterDetails
-import com.betclic.interview.api.dto.Character
+import com.betclic.interview.api.dto.PlayerDetails
+import com.betclic.interview.api.dto.Player
 import io.reactivex.Single
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -12,12 +12,12 @@ class ExerciseRepository @Inject constructor(
     private val exerciseApiClient: ExerciseApiClient
 ) {
 
-    fun getCharacters(): Single<List<Character>> =
-        exerciseApiClient.getCharacters()
+    fun getPlayers(): Single<List<Player>> =
+        exerciseApiClient.getPlayers()
 
-    fun getCharacter(id: String): Single<CharacterDetails> =
-        exerciseApiClient.getCharacter(id)
+    fun getPlayer(id: String): Single<PlayerDetails> =
+        exerciseApiClient.getPlayer(id)
 
-    suspend fun getSuspendCharacter(id: String): CharacterDetails =
-        exerciseApiClient.getSuspendCharacter(id)
+    suspend fun getSuspendPlayer(id: String): PlayerDetails =
+        exerciseApiClient.getSuspendPlayer(id)
 }

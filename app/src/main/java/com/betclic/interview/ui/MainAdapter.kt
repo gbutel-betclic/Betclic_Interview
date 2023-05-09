@@ -4,38 +4,38 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.betclic.interview.R
-import com.betclic.interview.api.dto.Character
+import com.betclic.interview.api.dto.Player
 
-class MainAdapter : RecyclerView.Adapter<MainAdapter.CharacterViewHolder>() {
+class MainAdapter : RecyclerView.Adapter<MainAdapter.PlayerViewHolder>() {
 
-    var characters: List<Character> = emptyList()
+    var players: List<Player> = emptyList()
         set(value) {
             field = value
             notifyDataSetChanged()
         }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterViewHolder {
-        return CharacterViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlayerViewHolder {
+        return PlayerViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_character, parent, false) as CharacterCardView
+                .inflate(R.layout.item_player, parent, false) as PlayerCardView
         )
     }
 
-    override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
-        val character = characters[position]
+    override fun onBindViewHolder(holder: PlayerViewHolder, position: Int) {
+        val player = players[position]
         holder.item.set(
-            CharacterCardState(
-                iconUrl = character.img,
-                name = character.name,
-                house = character.house,
-                portrayed = character.portrayed,
+            PlayerCardState(
+                imageUrl = player.img,
+                name = player.name,
+                club = player.club,
+                position = player.position,
             )
         )
     }
 
-    override fun getItemCount(): Int = characters.size
+    override fun getItemCount(): Int = players.size
 
-    class CharacterViewHolder(
-        val item: CharacterCardView
+    class PlayerViewHolder(
+        val item: PlayerCardView
     ) : RecyclerView.ViewHolder(item)
 }

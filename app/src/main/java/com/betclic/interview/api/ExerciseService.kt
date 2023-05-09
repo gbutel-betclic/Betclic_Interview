@@ -1,19 +1,19 @@
 package com.betclic.interview.api
 
-import com.betclic.interview.api.dto.Character
-import com.betclic.interview.api.dto.CharacterDetails
+import com.betclic.interview.api.dto.Player
+import com.betclic.interview.api.dto.PlayerDetails
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface ExerciseService {
 
-    @GET("characters")
-    fun getCharacters(): Single<List<Character>>
+    @GET("players")
+    fun getPlayers(): Single<List<Player>>
 
-    @GET("characters/bySlug/{id}")
-    fun getCharacter(@Path("id") id: String): Single<CharacterDetails>
+    @GET("players/{id}")
+    fun getPlayer(@Path("id") id: String): Single<PlayerDetails>
 
-    @GET("characters/bySlug/{id}")
-    suspend fun getSuspendCharacter(@Path("id") id: String): CharacterDetails
+    @GET("players/{id}")
+    suspend fun getSuspendPlayer(@Path("id") id: String): PlayerDetails
 }

@@ -36,14 +36,14 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        viewModel.getCharacters()
+        viewModel.getPlayers()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe { characterList, throwable ->
+            .subscribe { playersList, throwable ->
                 if (throwable != null) {
-                    Log.e("MainActivity", "Could not retrieve list of characters", throwable)
+                    Log.e("MainActivity", "Could not retrieve list of players", throwable)
                 } else {
-                    mainAdapter.characters = characterList
+                    mainAdapter.players = playersList
                 }
             }
     }

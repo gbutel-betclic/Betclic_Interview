@@ -16,7 +16,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField "String", "baseUrl", "\"https://api.got.show/api/show/\""
+        buildConfigField "String", "baseUrl", "\"https://gbutel-betclic.github.io/Betclic_Interview/api/\""
     }
 
     buildTypes {

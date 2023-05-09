@@ -1,7 +1,7 @@
 package com.betclic.interview.api
 
-import com.betclic.interview.api.dto.Character
-import com.betclic.interview.api.dto.CharacterDetails
+import com.betclic.interview.api.dto.Player
+import com.betclic.interview.api.dto.PlayerDetails
 import io.reactivex.Single
 import retrofit2.Retrofit
 import javax.inject.Inject
@@ -12,12 +12,12 @@ class ExerciseApiClient @Inject constructor(
 
     private val exerciseService: ExerciseService = retrofit.create(ExerciseService::class.java)
 
-    fun getCharacters(): Single<List<Character>> =
-        exerciseService.getCharacters()
+    fun getPlayers(): Single<List<Player>> =
+        exerciseService.getPlayers()
 
-    fun getCharacter(id: String): Single<CharacterDetails> =
-        exerciseService.getCharacter(id)
+    fun getPlayer(id: String): Single<PlayerDetails> =
+        exerciseService.getPlayer(id)
 
-    suspend fun getSuspendCharacter(id: String) =
-        exerciseService.getSuspendCharacter(id)
+    suspend fun getSuspendPlayer(id: String) =
+        exerciseService.getSuspendPlayer(id)
 }

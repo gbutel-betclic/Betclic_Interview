@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/details_character_avatar"
+        android:id="@+id/details_player_avatar"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="@dimen/margin_high"
@@ -19,7 +19,7 @@
         tools:src="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/details_character_name"
+        android:id="@+id/details_player_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_medium"
@@ -30,15 +30,15 @@
         android:textSize="@dimen/textsize_item_title"
         android:textStyle="bold"
         app:layout_constrainedWidth="true"
-        app:layout_constraintBottom_toBottomOf="@id/details_character_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/details_player_avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toEndOf="@id/details_character_avatar"
-        app:layout_constraintTop_toTopOf="@id/details_character_avatar"
-        tools:text="Character name" />
+        app:layout_constraintStart_toEndOf="@id/details_player_avatar"
+        app:layout_constraintTop_toTopOf="@id/details_player_avatar"
+        tools:text="Player name" />
 
     <TextView
-        android:id="@+id/details_character_house"
+        android:id="@+id/details_player_club"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_high"
@@ -52,11 +52,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/details_character_avatar"
-        tools:text="Character house" />
+        app:layout_constraintTop_toBottomOf="@+id/details_player_avatar"
+        tools:text="Player club" />
 
     <TextView
-        android:id="@+id/details_character_portrayed"
+        android:id="@+id/details_player_position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_high"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/details_character_house"
-        tools:text="Portrayed by" />
+        app:layout_constraintTop_toBottomOf="@+id/details_player_club"
+        tools:text="Defender" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

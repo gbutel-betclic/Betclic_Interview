@@ -1,0 +1,184 @@
+[
+    {
+        "club": "Tottenham",
+        "id": 1,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/1/1.png",
+        "name": "Hugo Lloris",
+        "position": "Goalkeeper"
+    },
+    {
+        "club": "Barcelone",
+        "id": 2,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/2/2.png",
+        "name": "Jules Kounde",
+        "position": "Defender"
+    },
+    {
+        "club": "Manchester United",
+        "id": 3,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/3/3.png",
+        "name": "Raphael Varane",
+        "position": "Defender"
+    },
+    {
+        "club": "Bayern Munich",
+        "id": 4,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/4/4.png",
+        "name": "Dayot Upamecano",
+        "position": "Defender"
+    },
+    {
+        "club": "Milan AC",
+        "id": 5,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/5/5.png",
+        "name": "Theo Hernandez",
+        "position": "Defender"
+    },
+    {
+        "club": "Real Madrid",
+        "id": 6,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/6/6.png",
+        "name": "Aurelien Tchouameni",
+        "position": "Midfielder"
+    },
+    {
+        "club": "Atletico Madrid",
+        "id": 7,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/7/7.png",
+        "name": "Antoine Griezmann",
+        "position": "Midfielder"
+    },
+    {
+        "club": "Juventus Turin",
+        "id": 8,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/8/8.png",
+        "name": "Adrien Rabiot",
+        "position": "Midfielder"
+    },
+    {
+        "club": "Barcelone",
+        "id": 9,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/9/9.png",
+        "name": "Ousmane Dembele",
+        "position": "Forward"
+    },
+    {
+        "club": "Milan AC",
+        "id": 10,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/10/10.png",
+        "name": "Olivier Giroud",
+        "position": "Forward"
+    },
+    {
+        "club": "Paris SG",
+        "id": 11,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/11/11.png",
+        "name": "Kylian Mbappe",
+        "position": "Forward"
+    },
+    {
+        "club": "Eintracht Francfort",
+        "id": 12,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/12/12.png",
+        "name": "Randal Kolo Muani",
+        "position": "Forward"
+    },
+    {
+        "club": "Borussia Monchengladbach",
+        "id": 13,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/13/13.png",
+        "name": "Marcus Thuram",
+        "position": "Forward"
+    },
+    {
+        "club": "Real Madrid",
+        "id": 14,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/14/14.png",
+        "name": "Eduardo Camavinga",
+        "position": "Midfielder"
+    },
+    {
+        "club": "Bayern Munich",
+        "id": 15,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/15/15.png",
+        "name": "Kingsley Coman",
+        "position": "Forward"
+    },
+    {
+        "club": "Monaco",
+        "id": 16,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/16/16.png",
+        "name": "Youssouf Fofana",
+        "position": "Midfielder"
+    },
+    {
+        "club": "Liverpool",
+        "id": 17,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/17/17.png",
+        "name": "Ibrahima Konate",
+        "position": "Defender"
+    },
+    {
+        "club": "Monaco",
+        "id": 18,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/18/18.png",
+        "name": "Axel Disasi",
+        "position": "Defender"
+    },
+    {
+        "club": "West Ham",
+        "id": 19,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/19/19.png",
+        "name": "Alphonse Areola",
+        "position": "Goalkeeper"
+    },
+    {
+        "club": "Marseille",
+        "id": 20,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/20/20.png",
+        "name": "Matteo Guendouzi",
+        "position": "Midfielder"
+    },
+    {
+        "club": "Rennes",
+        "id": 21,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/21/21.png",
+        "name": "Steven Mandanda",
+        "position": "Goalkeeper"
+    },
+    {
+        "club": "Bayern Munich",
+        "id": 22,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/22/22.png",
+        "name": "Benjamin Pavard",
+        "position": "Defender"
+    },
+    {
+        "club": "Arsenal",
+        "id": 23,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/23/23.png",
+        "name": "William Saliba",
+        "position": "Defender"
+    },
+    {
+        "club": "Marseille",
+        "id": 24,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/24/24.png",
+        "name": "Jordan Veretout",
+        "position": "Midfielder"
+    },
+    {
+        "club": "Real Madrid",
+        "id": 25,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/25/25.png",
+        "name": "Karim Benzema",
+        "position": "Forward"
+    },
+    {
+        "club": "Bayern Munich",
+        "id": 26,
+        "image": "https://gbutel-betclic.github.io/Betclic_Interview/api/players/26/26.png",
+        "name": "Lucas Hernandez",
+        "position": "Defender"
+    }
+]

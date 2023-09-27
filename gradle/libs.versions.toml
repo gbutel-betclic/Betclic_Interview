@@ -1,15 +1,16 @@
 [versions]
 androidGradlePlugin = "8.1.1"
-androidxActivity = "1.7.2"
-androidxCompose = "1.5.1"
+androidxActivity = "1.8.0"
+androidxCompose = "1.5.3"
 androidxCore = "1.12.0"
 androidxLifecycle = "2.6.2"
 coil = "2.4.0"
 hilt = "2.48"
-kotlin = "1.9.0"
+kotlin = "1.9.10"
 kotlinxCoroutines = "1.7.3"
+ksp = "1.9.10-1.0.13"
 junit4 = "4.13.2"
-material = "1.9.0"
+material = "1.10.0"
 retrofit = "2.9.0"
 rxAndroid = "2.1.1"
 rxJava = "2.2.21"
@@ -19,6 +20,7 @@ androidx-activity = { group = "androidx.activity", name = "activity-compose", ve
 androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "androidxCompose" }
 androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "androidxCompose" }
 androidx-compose-runtime-rxjava2 = { group = "androidx.compose.runtime", name = "runtime-rxjava2", version.ref = "androidxCompose" }
+androidx-compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "androidxCompose" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "androidxCompose" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "androidxCompose" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "androidxCompose" }
@@ -41,13 +43,15 @@ rxjava2-rxandroid = { group = "io.reactivex.rxjava2", name = "rxandroid", versio
 rxjava2-rxjava = { group = "io.reactivex.rxjava2", name = "rxjava", version.ref = "rxJava" }
 
 [bundles]
-compose = ["androidx-lifecycle-viewmodel-compose", "androidx-lifecycle-runtime-compose", "androidx-compose-material", "androidx-compose-runtime",
-    "androidx-compose-runtime-rxjava2", "androidx-compose-ui", "androidx-compose-ui-tooling", "androidx-compose-ui-tooling-preview", "androidx-compose-ui-viewbinding"]
+compose = ["androidx-lifecycle-viewmodel-compose", "androidx-lifecycle-runtime-compose",
+    "androidx-compose-runtime", "androidx-compose-runtime-rxjava2", "androidx-compose-runtime-livedata",
+    "androidx-compose-material", "androidx-compose-ui", "androidx-compose-ui-viewbinding",
+    "androidx-compose-ui-tooling", "androidx-compose-ui-tooling-preview"]
 retrofit = ["retrofit", "retrofit-converter-moshi", "retrofit-adapter-rxjava2"]
 rxjava2 = ["rxjava2-rxandroid", "rxjava2-rxandroid"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
-kotlin-android = { id ="org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-android = { id ="org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

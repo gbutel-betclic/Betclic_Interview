@@ -1,6 +1,5 @@
 package com.betclic.interview.di
 
-import com.betclic.interview.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

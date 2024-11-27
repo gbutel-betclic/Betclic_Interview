@@ -1,7 +1,9 @@
 package com.betclic.interview.details.data.api.dto
 
 import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 
+@JsonClass(generateAdapter = true)
 data class PlayerDetailsDto(
     @Json(name = "id") val id: String,
     @Json(name = "name") val name: String,

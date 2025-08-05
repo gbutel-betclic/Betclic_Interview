@@ -25,8 +25,6 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-    private val viewModel: MainViewModel by viewModels()
-
     @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,9 +41,7 @@ class MainActivity : ComponentActivity() {
                     }
                 ) {
                     // If you want to use activity/intent navigation
-                    /*MainScreen(
-                        viewModel = viewModel,
-                    )*/
+                    /*MainScreen()*/
                     // If you want to use compose navigation
                     MainNavigation()
                 }

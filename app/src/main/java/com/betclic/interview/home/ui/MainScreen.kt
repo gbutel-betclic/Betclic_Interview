@@ -17,12 +17,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 
 @Composable
-fun MainScreen(
-    viewModel: MainViewModel,
-) {
+fun MainScreen() {
+    val viewModel: MainViewModel = hiltViewModel()
+
     LazyColumn(
         modifier = Modifier
             .fillMaxSize(),

@@ -5,9 +5,9 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class PlayerDto(
-    @Json(name = "id") val id: String,
-    @Json(name = "name") val name: String,
-    @Json(name = "image") val image: String,
-    @Json(name = "club") val club: String,
-    @Json(name = "position") val position: String,
+    @param:Json(name = "id") val id: String,
+    @param:Json(name = "name") val name: String,
+    @param:Json(name = "image") val image: String,
+    @param:Json(name = "club") val club: String,
+    @param:Json(name = "position") val position: String,
 )

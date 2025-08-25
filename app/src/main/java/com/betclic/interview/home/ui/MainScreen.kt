@@ -21,9 +21,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 
 @Composable
-fun MainScreen() {
-    val viewModel: MainViewModel = hiltViewModel()
-
+fun MainScreen(
+    viewModel: MainViewModel = hiltViewModel(),
+) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize(),

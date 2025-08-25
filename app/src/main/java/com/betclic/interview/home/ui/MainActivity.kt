@@ -55,7 +55,7 @@ class MainActivity : ComponentActivity() {
 
         NavHost(
             navController = navController,
-            startDestination = MainDestination.route,
+            startDestination = MainDestination,
         ) {
             mainDestination()
         }

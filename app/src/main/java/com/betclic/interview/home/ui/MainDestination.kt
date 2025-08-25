@@ -2,16 +2,13 @@ package com.betclic.interview.home.ui
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.betclic.interview.compose.ui.navigation.Destination
+import kotlinx.serialization.Serializable
 
 fun NavGraphBuilder.mainDestination() {
-    composable(
-        route = MainDestination.route,
-    ) {
+    composable<MainDestination>{
         MainScreen()
     }
 }
 
-object MainDestination : Destination(
-    route = "main",
-)
+@Serializable
+object MainDestination

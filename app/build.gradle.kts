@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.hilt)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 @Suppress("UnstableApiUsage")
@@ -46,7 +47,9 @@ dependencies {
     ksp(libs.moshi.kotlin.codegen)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity)
+    implementation(libs.androidx.compose.navigation)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.bundles.compose)
     implementation(libs.bundles.retrofit)
